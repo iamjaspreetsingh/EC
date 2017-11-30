@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    String TAG="MainActivity";
+    String TAG = "MainActivity";
     private String password;
 
     @Override
@@ -95,7 +95,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-    }@Override
+    }
+
+    @Override
     public void onStart() {
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
@@ -108,5 +110,9 @@ public class MainActivity extends AppCompatActivity {
             mAuth.removeAuthStateListener(mAuthListener);
         }
     }
-    
+
+
+
+
+
 }

@@ -231,8 +231,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 }
             });
         } else {
-            // The ViewPropertyAnimator APIs are not available, so simply show
-            // and hide the relevant UI components.
+
+
             mProgressView.setVisibility(show ? View.VISIBLE : View.GONE);
             mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
         }
@@ -289,7 +289,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         };
 
         int ADDRESS = 0;
-        int IS_PRIMARY = 1;
+
     }
 
     /**
@@ -325,7 +325,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 }
             }
 
-            // TODO: register the new account here.
             return true;
         }
 
@@ -353,25 +352,6 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         // ...
                     }
                 };
-
-
-
-
-
-
-
-
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
-
-
-
-
-
-
-
-
-
 
 
 
